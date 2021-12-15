@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="DiScenFw" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug-x86">
+				<Option output="../../lib/gcc-x86-Debug/DiScenFw-x86" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/DiScenFw/gcc-x86-Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+					<Add library="gpvulc_text-sd-x86" />
+					<Add library="gpvulc_time-sd-x86" />
+					<Add library="gpvulc_path-sd-x86" />
+					<Add library="gpvulc_json-sd-x86" />
+					<Add library="gpvulc_console-sd-x86" />
+					<Add library="boost_filesystem-gcc-sd-x86" />
+					<Add library="boost_date_time-gcc-sd-x86" />
+				</Linker>
+			</Target>
+			<Target title="Release-x86">
+				<Option output="../../lib/gcc-x86-Release/DiScenFw-x86" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/DiScenFw/gcc-x86-Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+					<Add library="gpvulc_text-s-x86" />
+					<Add library="gpvulc_time-s-x86" />
+					<Add library="gpvulc_path-s-x86" />
+					<Add library="gpvulc_json-s-x86" />
+					<Add library="gpvulc_console-s-x86" />
+					<Add library="boost_filesystem-gcc-s-x86" />
+					<Add library="boost_date_time-gcc-s-x86" />
+				</Linker>
+			</Target>
+			<Target title="Debug-x64">
+				<Option output="../../lib/gcc-x64-Debug/DiScenFw-x64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/DiScenFw/gcc-x64-Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="gpvulc_text-sd-x64" />
+					<Add library="gpvulc_time-sd-x64" />
+					<Add library="gpvulc_path-sd-x64" />
+					<Add library="gpvulc_json-sd-x64" />
+					<Add library="gpvulc_console-sd-x64" />
+					<Add library="boost_filesystem-gcc-sd-x64" />
+					<Add library="boost_date_time-gcc-sd-x64" />
+				</Linker>
+			</Target>
+			<Target title="Release-x64">
+				<Option output="../../lib/gcc-x64-Release/DiScenFw-x64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/DiScenFw/gcc-x64-Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add option="-s" />
+					<Add library="gpvulc_text-s-x64" />
+					<Add library="gpvulc_time-s-x64" />
+					<Add library="gpvulc_path-s-x64" />
+					<Add library="gpvulc_json-s-x64" />
+					<Add library="gpvulc_console-s-x64" />
+					<Add library="boost_filesystem-gcc-s-x64" />
+					<Add library="boost_date_time-gcc-s-x64" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++14" />
+			<Add option="-DDISCENFW_EXPORT" />
+			<Add option="-DBOOST_ALL_NO_LIB" />
+			<Add option="-DGPVULC_STATIC" />
+			<Add option="-D_WINDLL" />
+			<Add option="-D_CODE_BLOCKS" />
+			<Add directory="../../include" />
+			<Add directory="../../../deps/gpvulc/include" />
+			<Add directory="../../../deps/boost" />
+			<Add directory="../../../deps/rapidjson" />
+		</Compiler>
+		<Linker>
+			<Add option="-static" />
+			<Add directory="../../../deps/gpvulc/lib/gcc" />
+			<Add directory="../../../deps/boost/lib" />
+		</Linker>
+		<Unit filename="../../include/DiScenAPI.h" />
+		<Unit filename="../../include/DiScenFw.h" />
+		<Unit filename="../../include/DiScenFwConfig.h" />
+		<Unit filename="../../include/DiScenXp.h" />
+		<Unit filename="../../include/discenfw/DigitalScenarioFramework.h" />
+		<Unit filename="../../include/discenfw/RL/IAgent.h" />
+		<Unit filename="../../include/discenfw/RL/IAgentConfiguration.h" />
+		<Unit filename="../../include/discenfw/RL/RLAgent.h" />
+		<Unit filename="../../include/discenfw/RL/RLConfig.h" />
+		<Unit filename="../../include/discenfw/interop/AgentLink.h" />
+		<Unit filename="../../include/discenfw/interop/AgentPlugin.h" />
+		<Unit filename="../../include/discenfw/interop/CyberSystemLink.h" />
+		<Unit filename="../../include/discenfw/interop/CyberSystemPlugin.h" />
+		<Unit filename="../../include/discenfw/scen/Aggregate.h" />
+		<Unit filename="../../include/discenfw/scen/Anchor.h" />
+		<Unit filename="../../include/discenfw/scen/AssetDefinition.h" />
+		<Unit filename="../../include/discenfw/scen/AssetReference.h" />
+		<Unit filename="../../include/discenfw/scen/Catalog.h" />
+		<Unit filename="../../include/discenfw/scen/CatalogItem.h" />
+		<Unit filename="../../include/discenfw/scen/CommonData.h" />
+		<Unit filename="../../include/discenfw/scen/ConnectionElement.h" />
+		<Unit filename="../../include/discenfw/scen/DiScenApiWrapper.h" />
+		<Unit filename="../../include/discenfw/scen/Element.h" />
+		<Unit filename="../../include/discenfw/scen/Entity.h" />
+		<Unit filename="../../include/discenfw/scen/EntityBadge.h" />
+		<Unit filename="../../include/discenfw/scen/EntityIdentity.h" />
+		<Unit filename="../../include/discenfw/scen/GroupElement.h" />
+		<Unit filename="../../include/discenfw/scen/Inventory.h" />
+		<Unit filename="../../include/discenfw/scen/InventoryItem.h" />
+		<Unit filename="../../include/discenfw/scen/MutableElement.h" />
+		<Unit filename="../../include/discenfw/scen/Scenario.h" />
+		<Unit filename="../../include/discenfw/scen/ScenarioData.h" />
+		<Unit filename="../../include/discenfw/scen/ScenarioManager.h" />
+		<Unit filename="../../include/discenfw/scen/SocketInfo.h" />
+		<Unit filename="../../include/discenfw/sim/HistoryLogParser.h" />
+		<Unit filename="../../include/discenfw/sim/ScenarioHistoryData.h" />
+		<Unit filename="../../include/discenfw/sim/SimulationController.h" />
+		<Unit filename="../../include/discenfw/sim/SimulationExecutor.h" />
+		<Unit filename="../../include/discenfw/sim/SimulationManager.h" />
+		<Unit filename="../../include/discenfw/util/CompOp.h" />
+		<Unit filename="../../include/discenfw/util/DateTimeUtil.h" />
+		<Unit filename="../../include/discenfw/util/IBaseClass.h" />
+		<Unit filename="../../include/discenfw/util/LogicOp.h" />
+		<Unit filename="../../include/discenfw/util/Rand.h" />
+		<Unit filename="../../include/discenfw/ve/VeManager.h" />
+		<Unit filename="../../include/discenfw/ve/VirtualEnvironmentAPI.h" />
+		<Unit filename="../../include/discenfw/xp/Action.h" />
+		<Unit filename="../../include/discenfw/xp/ActionResult.h" />
+		<Unit filename="../../include/discenfw/xp/AgentStats.h" />
+		<Unit filename="../../include/discenfw/xp/Condition.h" />
+		<Unit filename="../../include/discenfw/xp/CyberSystemAgent.h" />
+		<Unit filename="../../include/discenfw/xp/CyberSystemAssistant.h" />
+		<Unit filename="../../include/discenfw/xp/DiScenXpWrapper.h" />
+		<Unit filename="../../include/discenfw/xp/DigitalAssistant.h" />
+		<Unit filename="../../include/discenfw/xp/EntityCondition.h" />
+		<Unit filename="../../include/discenfw/xp/EntityState.h" />
+		<Unit filename="../../include/discenfw/xp/EntityStateType.h" />
+		<Unit filename="../../include/discenfw/xp/EnvironmentModel.h" />
+		<Unit filename="../../include/discenfw/xp/EnvironmentState.h" />
+		<Unit filename="../../include/discenfw/xp/EnvironmentStateInfo.h" />
+		<Unit filename="../../include/discenfw/xp/Episode.h" />
+		<Unit filename="../../include/discenfw/xp/Experience.h" />
+		<Unit filename="../../include/discenfw/xp/ExperienceLevel.h" />
+		<Unit filename="../../include/discenfw/xp/FeatureCondition.h" />
+		<Unit filename="../../include/discenfw/xp/ICyberSystem.h" />
+		<Unit filename="../../include/discenfw/xp/PropertyCondition.h" />
+		<Unit filename="../../include/discenfw/xp/PropertyReward.h" />
+		<Unit filename="../../include/discenfw/xp/RelationshipCondition.h" />
+		<Unit filename="../../include/discenfw/xp/RelationshipLink.h" />
+		<Unit filename="../../include/discenfw/xp/RoleInfo.h" />
+		<Unit filename="../../include/discenfw/xp/SharedArena.h" />
+		<Unit filename="../../include/discenfw/xp/StateRewardRules.h" />
+		<Unit filename="../../include/discenfw/xp/Transition.h" />
+		<Unit filename="../../include/discenfw/xp/ref.h" />
+		<Unit filename="../../src/DiScenFw.cpp" />
+		<Unit filename="../../src/DigitalScenarioFramework.cpp" />
+		<Unit filename="../../src/JSON/JsonCatalog.cpp" />
+		<Unit filename="../../src/JSON/JsonCatalog.h" />
+		<Unit filename="../../src/JSON/JsonCatalogParser.cpp" />
+		<Unit filename="../../src/JSON/JsonCatalogParser.h" />
+		<Unit filename="../../src/JSON/JsonCatalogWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonCatalogWriter.h" />
+		<Unit filename="../../src/JSON/JsonCommonParser.cpp" />
+		<Unit filename="../../src/JSON/JsonCommonParser.h" />
+		<Unit filename="../../src/JSON/JsonCommonWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonCommonWriter.h" />
+		<Unit filename="../../src/JSON/JsonEnvironmentModel.cpp" />
+		<Unit filename="../../src/JSON/JsonEnvironmentModel.h" />
+		<Unit filename="../../src/JSON/JsonEnvironmentModelParser.cpp" />
+		<Unit filename="../../src/JSON/JsonEnvironmentModelParser.h" />
+		<Unit filename="../../src/JSON/JsonEnvironmentModelWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonEnvironmentModelWriter.h" />
+		<Unit filename="../../src/JSON/JsonExperience.cpp" />
+		<Unit filename="../../src/JSON/JsonExperience.h" />
+		<Unit filename="../../src/JSON/JsonExperienceParser.cpp" />
+		<Unit filename="../../src/JSON/JsonExperienceParser.h" />
+		<Unit filename="../../src/JSON/JsonExperienceWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonExperienceWriter.h" />
+		<Unit filename="../../src/JSON/JsonHistory.cpp" />
+		<Unit filename="../../src/JSON/JsonHistory.h" />
+		<Unit filename="../../src/JSON/JsonHistoryParser.cpp" />
+		<Unit filename="../../src/JSON/JsonHistoryParser.h" />
+		<Unit filename="../../src/JSON/JsonHistoryWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonHistoryWriter.h" />
+		<Unit filename="../../src/JSON/JsonParserBase.cpp" />
+		<Unit filename="../../src/JSON/JsonParserBase.h" />
+		<Unit filename="../../src/JSON/JsonRLConfig.cpp" />
+		<Unit filename="../../src/JSON/JsonRLConfig.h" />
+		<Unit filename="../../src/JSON/JsonRLConfigParser.cpp" />
+		<Unit filename="../../src/JSON/JsonRLConfigParser.h" />
+		<Unit filename="../../src/JSON/JsonRLConfigWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonRLConfigWriter.h" />
+		<Unit filename="../../src/JSON/JsonRoleInfo.cpp" />
+		<Unit filename="../../src/JSON/JsonRoleInfo.h" />
+		<Unit filename="../../src/JSON/JsonRoleInfoParser.cpp" />
+		<Unit filename="../../src/JSON/JsonRoleInfoParser.h" />
+		<Unit filename="../../src/JSON/JsonRoleInfoWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonRoleInfoWriter.h" />
+		<Unit filename="../../src/JSON/JsonScenario.cpp" />
+		<Unit filename="../../src/JSON/JsonScenario.h" />
+		<Unit filename="../../src/JSON/JsonScenarioParser.cpp" />
+		<Unit filename="../../src/JSON/JsonScenarioParser.h" />
+		<Unit filename="../../src/JSON/JsonScenarioWriter.cpp" />
+		<Unit filename="../../src/JSON/JsonScenarioWriter.h" />
+		<Unit filename="../../src/JSON/JsonWriterBase.cpp" />
+		<Unit filename="../../src/JSON/JsonWriterBase.h" />
+		<Unit filename="../../src/RL/RLAgent.cpp" />
+		<Unit filename="../../src/interop/AgentLink.cpp" />
+		<Unit filename="../../src/interop/CyberSystemLink.cpp" />
+		<Unit filename="../../src/interop/DiScenApi.cpp" />
+		<Unit filename="../../src/interop/DiScenApiWrapper.cpp" />
+		<Unit filename="../../src/interop/DiScenXp.cpp" />
+		<Unit filename="../../src/interop/DiScenXpWrapper.cpp" />
+		<Unit filename="../../src/scen/Aggregate.cpp" />
+		<Unit filename="../../src/scen/Catalog.cpp" />
+		<Unit filename="../../src/scen/ConnectionElement.cpp" />
+		<Unit filename="../../src/scen/Element.cpp" />
+		<Unit filename="../../src/scen/Entity.cpp" />
+		<Unit filename="../../src/scen/GroupElement.cpp" />
+		<Unit filename="../../src/scen/MutableElement.cpp" />
+		<Unit filename="../../src/scen/Scenario.cpp" />
+		<Unit filename="../../src/scen/ScenarioData.cpp" />
+		<Unit filename="../../src/scen/ScenarioManager.cpp" />
+		<Unit filename="../../src/scen/VirtualEnvironmentAPI.cpp" />
+		<Unit filename="../../src/sim/HistoryLogParser.cpp" />
+		<Unit filename="../../src/sim/SimulationController.cpp" />
+		<Unit filename="../../src/sim/SimulationExecutor.cpp" />
+		<Unit filename="../../src/sim/SimulationManager.cpp" />
+		<Unit filename="../../src/util/CompOp.cpp" />
+		<Unit filename="../../src/util/DateTimeUtil.cpp" />
+		<Unit filename="../../src/util/MessageLog.cpp" />
+		<Unit filename="../../src/util/Rand.cpp" />
+		<Unit filename="../../src/ve/VeManager.cpp" />
+		<Unit filename="../../src/xp/Condition.cpp" />
+		<Unit filename="../../src/xp/CyberSystemAgent.cpp" />
+		<Unit filename="../../src/xp/CyberSystemAssistant.cpp" />
+		<Unit filename="../../src/xp/DigitalAssistant.cpp" />
+		<Unit filename="../../src/xp/EntityCondition.cpp" />
+		<Unit filename="../../src/xp/EntityState.cpp" />
+		<Unit filename="../../src/xp/EntityStateType.cpp" />
+		<Unit filename="../../src/xp/EnvironmentModel.cpp" />
+		<Unit filename="../../src/xp/EnvironmentState.cpp" />
+		<Unit filename="../../src/xp/Experience.cpp" />
+		<Unit filename="../../src/xp/FeatureCondition.cpp" />
+		<Unit filename="../../src/xp/PropertyCondition.cpp" />
+		<Unit filename="../../src/xp/RoleInfo.cpp" />
+		<Unit filename="../../src/xp/SharedArena.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

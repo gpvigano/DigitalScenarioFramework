@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DSF_ROOT>$(ProjectDir)..\..\..\</DSF_ROOT>
+    <UE4TEST_ROOT>$(DSF_ROOT)..\UnrealScenarioTest 4.16\</UE4TEST_ROOT>
+    <UE4TEST_BIN>$(UE4TEST_ROOT)Binaries\Win64\</UE4TEST_BIN>
+    <UNITY_TEST_ROOT>$(DSF_ROOT)..\UnityDigitalScenarioTest\</UNITY_TEST_ROOT>
+    <UNITY_TEST_PLUGINS>$(UNITY_TEST_ROOT)Assets\UnityDigitalScenario\Plugin\</UNITY_TEST_PLUGINS>
+    <UNITY_TEST_PLUGINS_X86>$(UNITY_TEST_ROOT)Assets\UnityDigitalScenario\Plugin\x86\</UNITY_TEST_PLUGINS_X86>
+    <UNITY_TEST_PLUGINS_X64>$(UNITY_TEST_ROOT)Assets\UnityDigitalScenario\Plugin\x86_64\</UNITY_TEST_PLUGINS_X64>
+    <UNITY_TEST_STREAMING>$(UNITY_TEST_ROOT)Assets\StreamingAssets\</UNITY_TEST_STREAMING>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="UE4TEST_ROOT">
+      <Value>$(UE4TEST_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UE4TEST_BIN">
+      <Value>$(UE4TEST_BIN)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UNITY_TEST_ROOT">
+      <Value>$(UNITY_TEST_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UNITY_TEST_PLUGINS">
+      <Value>$(UNITY_TEST_PLUGINS)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UNITY_TEST_PLUGINS_X86">
+      <Value>$(UNITY_TEST_PLUGINS_X86)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UNITY_TEST_PLUGINS_X64">
+      <Value>$(UNITY_TEST_PLUGINS_X64)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="UNITY_TEST_STREAMING">
+      <Value>$(UNITY_TEST_STREAMING)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

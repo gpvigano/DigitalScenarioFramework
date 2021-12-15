@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Gridworld" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug-x86">
+				<Option output="../../lib/gcc-x86-Debug/Gridworld-x86" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/Gridworld/gcc-x86-Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-m32" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m32" />
+					<Add library="DiScenFw-x86" />
+					<Add directory="../../../DiScenFw/lib/gcc-x86-Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release-x86">
+				<Option output="../../lib/gcc-x86-Release/Gridworld-x86" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/Gridworld/gcc-x86-Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-m32" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m32" />
+					<Add library="DiScenFw-x86" />
+					<Add directory="../../../DiScenFw/lib/gcc-x86-Release" />
+				</Linker>
+			</Target>
+			<Target title="Debug-x64">
+				<Option output="../../lib/gcc-x64-Debug/Gridworld-x64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/Gridworld/gcc-x64-Debug" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="DiScenFw-x64" />
+					<Add directory="../../../DiScenFw/lib/gcc-x64-Debug" />
+				</Linker>
+			</Target>
+			<Target title="Release-x64">
+				<Option output="../../lib/gcc-x64-Release/Gridworld-x64" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../../../TEMP/Gridworld/gcc-x64-Release" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add option="-s" />
+					<Add library="DiScenFw-x64" />
+					<Add directory="../../../DiScenFw/lib/gcc-x64-Release" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=gnu++14" />
+			<Add option="-DBOOST_ALL_NO_LIB" />
+			<Add option="-D_WINDLL" />
+			<Add option="-D_CODE_BLOCKS" />
+			<Add directory="../../include" />
+			<Add directory="../../../DiScenFw/include" />
+			<Add directory="../../../deps/boost" />
+		</Compiler>
+		<Linker>
+			<Add option="-static" />
+			<Add directory="../../../deps/boost/lib" />
+		</Linker>
+		<Unit filename="../../include/Gridworld/GridData.h" />
+		<Unit filename="../../include/Gridworld/GridPosition.h" />
+		<Unit filename="../../include/Gridworld/Gridworld.h" />
+		<Unit filename="../../src/GridData.cpp" />
+		<Unit filename="../../src/Gridworld.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

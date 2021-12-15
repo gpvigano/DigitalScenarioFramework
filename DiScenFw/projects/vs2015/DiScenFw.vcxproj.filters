@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\xp">
+      <UniqueIdentifier>{99205246-31ea-4300-a480-3c0e916989fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\scen">
+      <UniqueIdentifier>{b5494db0-09c2-45ba-8f5f-eb1202731ae4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\sim">
+      <UniqueIdentifier>{3104c46b-60fc-4b53-9cd1-f20e2d507617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{3c17a985-a998-4f9f-9b9b-999559bc6100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{236fb467-5069-4dcd-80a6-1f36092f7043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xp">
+      <UniqueIdentifier>{488c667b-ceb6-49be-b91b-46def0dc2961}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\scen">
+      <UniqueIdentifier>{e002c330-3df9-4af7-ada6-c982f1027312}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\sim">
+      <UniqueIdentifier>{73e099f4-f347-449e-81b6-96bdd8d212d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\JSON">
+      <UniqueIdentifier>{5fdfd54a-5141-4299-bc89-8827a979e174}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\VE">
+      <UniqueIdentifier>{a05762bd-a114-4ab0-888d-fe60d03cb3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\VE">
+      <UniqueIdentifier>{ef54b882-895f-4a19-88c3-06cfa4354a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\interop">
+      <UniqueIdentifier>{1e753b89-e7bf-46ab-bd43-3640c4fb4382}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\interop">
+      <UniqueIdentifier>{aeeb3f9c-c952-457f-8942-7326e4b31443}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RL">
+      <UniqueIdentifier>{366926a5-3479-47e8-8521-2bb95648466f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\RL">
+      <UniqueIdentifier>{1b5cf71b-6391-4983-ad96-760febbf9316}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\DiScenFw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\DigitalScenarioFramework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\VirtualEnvironmentAPI.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\ScenarioManager.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonScenario.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonHistory.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\Rand.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sim\HistoryLogParser.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sim\SimulationController.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sim\SimulationExecutor.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sim\SimulationManager.cpp">
+      <Filter>Source Files\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\Condition.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\DigitalAssistant.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\EntityStateType.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\SharedArena.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ve\VeManager.cpp">
+      <Filter>Source Files\VE</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\ScenarioData.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\Experience.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonCatalog.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonExperience.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\PropertyCondition.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\MessageLog.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\DateTimeUtil.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\CyberSystemAssistant.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\EntityCondition.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonCatalogParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonParserBase.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonWriterBase.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonCatalogWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonScenarioWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonScenarioParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonHistoryParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonHistoryWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonExperienceParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonExperienceWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\EnvironmentModel.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\RoleInfo.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\EntityState.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonRoleInfoParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonRoleInfoWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonRoleInfo.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonEnvironmentModelParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonEnvironmentModelWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonEnvironmentModel.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonCommonParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonCommonWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\CyberSystemAgent.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interop\CyberSystemLink.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interop\DiScenApi.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interop\DiScenApiWrapper.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interop\DiScenXp.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interop\DiScenXpWrapper.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonRLConfig.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonRLConfigParser.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\JSON\JsonRLConfigWriter.cpp">
+      <Filter>Source Files\JSON</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\EnvironmentState.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\Catalog.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\RL\RLAgent.cpp">
+      <Filter>Source Files\RL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interop\AgentLink.cpp">
+      <Filter>Source Files\interop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\CompOp.cpp">
+      <Filter>Source Files\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\xp\FeatureCondition.cpp">
+      <Filter>Source Files\xp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\Element.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\GroupElement.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\MutableElement.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\Scenario.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\ConnectionElement.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\Aggregate.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\scen\Entity.cpp">
+      <Filter>Source Files\scen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\DiScenFw\DigitalScenarioFramework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DiScenFw.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DiScenFwConfig.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DiScenAPI.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\DiScenXp.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\SharedArena.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\Action.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\Condition.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\DigitalAssistant.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\EntityState.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\EntityStateType.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\Episode.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\Experience.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\ExperienceLevel.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\PropertyCondition.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\util\IBaseClass.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\util\Rand.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\sim\HistoryLogParser.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\sim\ScenarioHistoryData.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\sim\SimulationController.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\sim\SimulationExecutor.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\sim\SimulationManager.h">
+      <Filter>Header Files\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\ScenarioData.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\ScenarioManager.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\CommonData.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\DiScenXpWrapper.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\DiScenApiWrapper.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\ve\VeManager.h">
+      <Filter>Header Files\VE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\ve\VirtualEnvironmentAPI.h">
+      <Filter>Header Files\VE</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\AgentStats.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\AssetReference.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Catalog.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\AssetDefinition.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\ActionResult.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\CatalogItem.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\util\DateTimeUtil.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\ICyberSystem.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\CyberSystemAssistant.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\RelationshipLink.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\EntityCondition.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\RelationshipCondition.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\EntityBadge.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Inventory.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\InventoryItem.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonParserBase.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonCatalogParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonWriterBase.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonCatalogWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonScenarioWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonScenarioParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonHistoryParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonHistoryWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonExperienceParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonExperienceWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonScenario.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonCatalog.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonExperience.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonHistory.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\EnvironmentStateInfo.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\RoleInfo.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\EnvironmentModel.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\EnvironmentState.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\StateRewardRules.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonRoleInfoParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonRoleInfoWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonRoleInfo.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonEnvironmentModel.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonEnvironmentModelParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonEnvironmentModelWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonCommonParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonCommonWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\Transition.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\CyberSystemAgent.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonRLConfig.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonRLConfigParser.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\JSON\JsonRLConfigWriter.h">
+      <Filter>Source Files\JSON</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\EntityIdentity.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\PropertyReward.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\RL\IAgent.h">
+      <Filter>Header Files\RL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\RL\RLAgent.h">
+      <Filter>Header Files\RL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\RL\IAgentConfiguration.h">
+      <Filter>Header Files\RL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\RL\RLConfig.h">
+      <Filter>Header Files\RL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\interop\AgentPlugin.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\interop\AgentLink.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\interop\CyberSystemLink.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\interop\CyberSystemPlugin.h">
+      <Filter>Header Files\interop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\ref.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\util\CompOp.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\xp\FeatureCondition.h">
+      <Filter>Header Files\xp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\util\LogicOp.h">
+      <Filter>Header Files\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\ConnectionElement.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Scenario.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\GroupElement.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\MutableElement.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Element.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Anchor.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\SocketInfo.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Aggregate.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\include\discenfw\scen\Entity.h">
+      <Filter>Header Files\scen</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

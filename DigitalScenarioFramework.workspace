@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="DigitalScenarioFramework">
+		<Project filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+		<Project filename="Gridworld/projects/CodeBlocks/Gridworld.cbp">
+			<Depends filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+			<Depends filename="SampleAgent/projects/CodeBlocks/SampleAgent.cbp" />
+		</Project>
+		<Project filename="SampleAgent/projects/CodeBlocks/SampleAgent.cbp">
+			<Depends filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+		</Project>
+		<Project filename="SampleCybSys/projects/CodeBlocks/SampleCybSys.cbp">
+			<Depends filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+		</Project>
+		<Project filename="SimplECircuitCybSys/projects/CodeBlocks/SimplECircuitCybSys.cbp">
+			<Depends filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+		</Project>
+		<Project filename="TicTacToeCybSys/projects/CodeBlocks/TicTacToeCybSys.cbp">
+			<Depends filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+		</Project>
+		<Project filename="DiScenFwTest/projects/CodeBlocks/DiScenFwTest.cbp">
+			<Depends filename="DiScenFw/projects/CodeBlocks/DiScenFw.cbp" />
+			<Depends filename="Gridworld/projects/CodeBlocks/Gridworld.cbp" />
+			<Depends filename="SampleAgent/projects/CodeBlocks/SampleAgent.cbp" />
+			<Depends filename="SimplECircuitCybSys/projects/CodeBlocks/SimplECircuitCybSys.cbp" />
+			<Depends filename="TicTacToeCybSys/projects/CodeBlocks/TicTacToeCybSys.cbp" />
+		</Project>
+	</Workspace>
+</CodeBlocks_workspace_file>

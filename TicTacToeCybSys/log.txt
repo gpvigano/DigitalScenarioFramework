@@ -1,0 +1,395 @@
+Agent training started
+___________________________________________________
+ (+)--{R1}--{LED1*}--{SW1'}--(-)
+ (+)--{LED1*}--{R1}--{SW1'}--(-)
+ (+)--{LED1*}--{R1}--{SW1'}--(-)
+ (+)--{R1}--{LED1*}--{SW1'}--(-)
+___________________________________________________
+
+Training complete after 500 trials.
+
+Random actions: 19%.
+Succeeded: 0.8%.
+Failed: 99.2%.
+ Failure: 5.6%.
+ Deadlock: 93.6%.
+
+Experience training started
+___________________________________________________
+ (+)--{SW1'}--{LED1*}--{R1}--(-)
+___________________________________________________
+
+Training complete after 100 trials.
+
+Random actions: 0%.
+Succeeded: 1.0%.
+Failed: 99.0%.
+ Failure: 6.0%.
+ Deadlock: 93.0%.
+
+
+___________________________________________________
+
+Testing stored experience.
+___________________________________________________
+
+
+LED circuit: new session started
+
+Suggested:
+  You can connect (R1, Pin1, LED1, Cathode)
+> R1.Pin1 <--> LED1.Cathode
+  =>  LED1 connected = 1
+  =>  R1 connected = 1
+Suggested:
+  You can connect (Battery, +, SW1, Out1)
+> Battery.+ <--> SW1.Out1
+  =>  Battery connected = 1
+  =>  SW1 connected = 1
+Suggested:
+  You can connect (SW1, Out0, R2, Pin1)
+> SW1.Out0 <--> R2.Pin1
+  =>  R2 connected = 1
+  =>  SW1 connected = 2
+Suggested:
+  You can connect (LED1, Anode, SW1, In)
+> LED1.Anode <--> SW1.In
+  =>  LED1 connected = 2
+  =>  SW1 connected = 3
+Suggested:
+  You can connect (Battery, -, R1, Pin2)
+> Battery.- <--> R1.Pin2
+  =>  Battery connected = 2
+  =>  R1 connected = 2
+Suggested:
+  You can switch (SW1, 1)
+> SW1: 1
+  =>  LED1 lit = true
+  =>  SW1 pos = 1
+LED circuit: Succeeded
+
+ (+)--{SW1'}--{LED1*}--{R1}--(-)
+___________________________________________________
+
+Testing user experience (failure).
+___________________________________________________
+
+
+LED circuit: new episode
+------------------------------------------
+
+> Battery.+ <--> LED1.Anode
+  =>  Battery connected = 1
+  =>  LED1 connected = 1
+> Battery.- <--> LED1.Cathode
+  =>  Battery connected = 2
+  =>  LED1 burnt out = true
+  =>  LED1 connected = 2
+LED circuit: Episode n.8 failed
+
+
+LED circuit: new episode
+------------------------------------------
+
+> Battery.+ <--> R2.Pin1
+  =>  Battery connected = 1
+  =>  R2 connected = 1
+> Battery.- <--> R2.Pin2
+  =>  Battery connected = 2
+  =>  R2 burnt out = true
+  =>  R2 connected = 2
+LED circuit: Episode n.9 failed
+
+
+LED circuit: new episode
+------------------------------------------
+
+> Battery.+ <--> Battery.-
+  =>  Battery burnt out = true
+  =>  Battery connected = 2
+LED circuit: Episode n.10 failed
+
+___________________________________________________
+
+Testing user experience (success).
+___________________________________________________
+
+
+LED circuit: new episode
+------------------------------------------
+
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> SW1.In
+  =>  Battery connected = 1
+  =>  SW1 connected = 1
+> SW1.Out1 <--> R1.Pin1
+  =>  R1 connected = 1
+  =>  SW1 connected = 2
+> R1.Pin2 <--> LED1.Anode
+  =>  LED1 connected = 1
+  =>  R1 connected = 2
+> LED1.Cathode <--> Battery.-
+  =>  Battery connected = 2
+  =>  LED1 connected = 2
+> SW1: 1
+  =>  LED1 lit = true
+  =>  SW1 pos = 1
+LED circuit: Episode n.11 completed, penalty = 4
+
+
+LED circuit: new episode
+------------------------------------------
+
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> SW1.In <--> R1.Pin1
+  =>  R1 connected = 1
+  =>  SW1 connected = 1
+> R1.Pin2 <--> LED1.Cathode
+  =>  LED1 connected = 1
+  =>  R1 connected = 2
+> SW1: 1
+  =>  SW1 pos = 1
+> SW1: 0
+  =>  SW1 pos = 0
+> Battery.+ <--> LED1.Anode
+  =>  Battery connected = 1
+  =>  LED1 connected = 2
+> Battery.- <--> SW1.Out1
+  =>  Battery connected = 2
+  =>  SW1 connected = 2
+> SW1: 1
+  =>  LED1 lit = true
+  =>  SW1 pos = 1
+LED circuit: Episode n.12 completed, penalty = 6
+
+___________________________________________________
+
+Testing user experience.
+___________________________________________________
+
+
+LED circuit: new episode
+------------------------------------------
+
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> SW1.In
+  =>  Battery connected = 1
+  =>  SW1 connected = 1
+> SW1.Out1 <--> R1.Pin1
+  =>  R1 connected = 1
+  =>  SW1 connected = 2
+> R1.Pin2 <--> LED1.Anode
+  =>  LED1 connected = 1
+  =>  R1 connected = 2
+> LED1.Cathode <--> Battery.-
+  =>  Battery connected = 2
+  =>  LED1 connected = 2
+> SW1: 1
+  =>  LED1 lit = true
+  =>  SW1 pos = 1
+LED circuit: Episode n.13 completed, penalty = 4
+
+LED circuit: Episode n.13 duplicate (not stored again).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> SW1.In
+  =>  Battery connected = 1
+  =>  SW1 connected = 1
+Suggested:
+  You can connect (SW1, Out1, R1, Pin1)
+> SW1.Out1 <--> R1.Pin1
+  =>  R1 connected = 1
+  =>  SW1 connected = 2
+Suggested:
+  You can connect (R1, Pin2, LED1, Anode)
+> R1.Pin2 <--> LED1.Anode
+  =>  LED1 connected = 1
+  =>  R1 connected = 2
+Suggested:
+  You can connect (LED1, Cathode, Battery, -)
+> LED1.Cathode <--> Battery.-
+  =>  Battery connected = 2
+  =>  LED1 connected = 2
+Suggested:
+  You can switch (SW1, 1)
+> SW1: 1
+  =>  LED1 lit = true
+  =>  SW1 pos = 1
+LED circuit: Episode n.13 completed, penalty = 4
+
+LED circuit: Episode n.13 duplicate (not stored again).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> R1.Pin1
+  =>  Battery connected = 1
+  =>  R1 connected = 1
+> R1.Pin2 <--> LED1.Anode
+  =>  LED1 connected = 1
+  =>  R1 connected = 2
+> LED1.Cathode <--> Battery.-
+  =>  Battery connected = 2
+  =>  LED1 connected = 2
+  =>  LED1 lit = true
+LED circuit: episode n.13 incomplete (discarded).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> LED1.Anode
+  =>  Battery connected = 1
+  =>  LED1 connected = 1
+Forbidden:
+  DO NOT connect (Battery, -, LED1, Cathode)
+> Battery.- <--> LED1.Cathode
+  =>  Battery connected = 2
+  =>  LED1 burnt out = true
+  =>  LED1 connected = 2
+LED circuit: Episode n.13 failed
+
+LED circuit: Episode n.13 duplicate (not stored again).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> LED1.Anode
+  =>  Battery connected = 1
+  =>  LED1 connected = 1
+Forbidden:
+  DO NOT connect (Battery, -, LED1, Cathode)
+> LED1.Cathode <--> R1.Pin1
+  =>  LED1 connected = 2
+  =>  R1 connected = 1
+> Battery.- <--> R1.Pin2
+  =>  Battery connected = 2
+  =>  LED1 lit = true
+  =>  R1 connected = 2
+LED circuit: episode n.13 incomplete (discarded).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> R2.Pin1
+  =>  Battery connected = 1
+  =>  R2 connected = 1
+Forbidden:
+  DO NOT connect (Battery, -, R2, Pin2)
+> Battery.- <--> R2.Pin2
+  =>  Battery connected = 2
+  =>  R2 burnt out = true
+  =>  R2 connected = 2
+LED circuit: Episode n.13 failed
+
+LED circuit: Episode n.13 duplicate (not stored again).
+
+
+LED circuit: new episode
+------------------------------------------
+
+> Battery.+ <--> R2.Pin1
+  =>  Battery connected = 1
+  =>  R2 connected = 1
+Forbidden:
+  DO NOT connect (Battery, -, R2, Pin2)
+> Battery.- <--> R2.Pin2
+  =>  Battery connected = 2
+  =>  R2 burnt out = true
+  =>  R2 connected = 2
+LED circuit: Episode n.13 failed
+
+LED circuit: Episode n.13 duplicate (not stored again).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> Battery.-
+  =>  Battery burnt out = true
+  =>  Battery connected = 2
+LED circuit: Episode n.13 failed
+
+LED circuit: Episode n.13 duplicate (not stored again).
+
+
+LED circuit: new episode
+------------------------------------------
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+
+___________________________________________________
+
+Testing stored experience.
+___________________________________________________
+
+
+LED circuit: new session started
+
+Suggested:
+  You can connect (Battery, +, SW1, In)
+Forbidden:
+  DO NOT connect (Battery, +, Battery, -)
+> Battery.+ <--> SW1.In
+  =>  Battery connected = 1
+  =>  SW1 connected = 1
+Suggested:
+  You can connect (SW1, Out1, R1, Pin1)
+> SW1.Out1 <--> R1.Pin1
+  =>  R1 connected = 1
+  =>  SW1 connected = 2
+Suggested:
+  You can connect (R1, Pin2, LED1, Anode)
+> R1.Pin2 <--> LED1.Anode
+  =>  LED1 connected = 1
+  =>  R1 connected = 2
+Suggested:
+  You can connect (LED1, Cathode, Battery, -)
+> LED1.Cathode <--> Battery.-
+  =>  Battery connected = 2
+  =>  LED1 connected = 2
+Suggested:
+  You can switch (SW1, 1)
+> SW1: 1
+  =>  LED1 lit = true
+  =>  SW1 pos = 1
+LED circuit: Succeeded
+
+ (+)--{SW1'}--{R1}--{LED1*}--(-)
+Premere un tasto per continuare . . .

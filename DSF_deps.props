@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <DSF_ROOT>$(ProjectDir)..\..\..\</DSF_ROOT>
+    <DEPEND_ROOT>$(DSF_ROOT)deps\</DEPEND_ROOT>
+    <BOOST_ROOT>$(DEPEND_ROOT)boost\</BOOST_ROOT>
+    <RAPIDJSON_ROOT>$(DEPEND_ROOT)rapidjson\</RAPIDJSON_ROOT>
+    <GPVULC_ROOT>$(DEPEND_ROOT)gpvulc\</GPVULC_ROOT>
+    <BOOST_VER>1_70</BOOST_VER>
+    <BOOST_INC>$(BOOST_ROOT)</BOOST_INC>
+    <BOOST_LIB>$(BOOST_ROOT)lib\</BOOST_LIB>
+    <RAPIDJSON_INC>$(RAPIDJSON_ROOT)</RAPIDJSON_INC>
+    <GPVULC_LIB>$(GPVULC_ROOT)lib\</GPVULC_LIB>
+    <GPVULC_INC>$(GPVULC_ROOT)include\</GPVULC_INC>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <BuildMacro Include="BOOST_ROOT">
+      <Value>$(BOOST_ROOT)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_VER">
+      <Value>$(BOOST_VER)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_INC">
+      <Value>$(BOOST_INC)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="BOOST_LIB">
+      <Value>$(BOOST_LIB)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="RAPIDJSON_INC">
+      <Value>$(RAPIDJSON_INC)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="GPVULC_INC">
+      <Value>$(GPVULC_INC)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="GPVULC_LIB">
+      <Value>$(GPVULC_LIB)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>

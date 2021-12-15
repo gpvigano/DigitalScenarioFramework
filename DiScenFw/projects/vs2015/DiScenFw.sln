@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DiScenFw", "DiScenFw.vcxproj", "{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Debug-Dll|x64 = Debug-Dll|x64
+		Debug-Dll|x86 = Debug-Dll|x86
+		GameDebug|x64 = GameDebug|x64
+		GameDebug|x86 = GameDebug|x86
+		GameDebugDLL|x64 = GameDebugDLL|x64
+		GameDebugDLL|x86 = GameDebugDLL|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		Release-Dll|x64 = Release-Dll|x64
+		Release-Dll|x86 = Release-Dll|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug|x64.ActiveCfg = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug|x64.Build.0 = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug|x86.ActiveCfg = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug|x86.Build.0 = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug-Dll|x64.ActiveCfg = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug-Dll|x64.Build.0 = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug-Dll|x86.ActiveCfg = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Debug-Dll|x86.Build.0 = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebug|x64.ActiveCfg = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebug|x64.Build.0 = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebug|x86.ActiveCfg = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebug|x86.Build.0 = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebugDLL|x64.ActiveCfg = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebugDLL|x64.Build.0 = Debug|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebugDLL|x86.ActiveCfg = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.GameDebugDLL|x86.Build.0 = Debug|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release|x64.ActiveCfg = Release|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release|x64.Build.0 = Release|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release|x86.ActiveCfg = Release|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release|x86.Build.0 = Release|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release-Dll|x64.ActiveCfg = Release|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release-Dll|x64.Build.0 = Release|x64
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release-Dll|x86.ActiveCfg = Release|Win32
+		{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}.Release-Dll|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

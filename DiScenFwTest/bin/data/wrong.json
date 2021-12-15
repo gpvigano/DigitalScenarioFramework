@@ -1,0 +1,39 @@
+{
+    "Scenario": {
+        "Entities": [
+            {
+                "Class": "Element",
+                "Type": "Test",
+                "Category": 1,
+                "Description": "",
+                "Configuration": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "Category": "",
+                    "Uri": "Box",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": false,
+                    "Location": {
+                        "Right": 0.0,
+                        "Forward": 100.0,
+                        "Upp": 100.0
+                    },
+                    "EulerAngles": {
+                        "Right": 0.0,
+                        "Forward": 0.0,
+                        "Up": 0.0
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            }
+        ]
+    }
+}

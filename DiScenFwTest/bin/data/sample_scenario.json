@@ -1,0 +1,227 @@
+{
+    "Scenario": {
+        "Name": "TestData",
+        "Entities": [
+            {
+                "Class": "Element",
+                "Identifier": "Box1",
+                "Category": "Test",
+                "Description": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "Category": "",
+                    "Uri": "Box",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 0.0,
+                            "Forward": 100.0,
+                            "Up": 100.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box2",
+                "Category": "Test",
+                "Description": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "Category": "",
+                    "Uri": "Box",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 100.0,
+                            "Forward": 100.0,
+                            "Up": 100.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Box3",
+                "Category": "Test",
+                "Description": "",
+                "Asset": {
+                    "Source": "PROJECT",
+                    "Catalog": "",
+                    "Category": "",
+                    "Uri": "BoxBP",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": 100.0,
+                            "Forward": 100.0,
+                            "Up": 150.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.25,
+                        "Forward": 0.25,
+                        "Up": 0.25
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Cone1",
+                "Category": "Test",
+                "Description": "",
+                "Asset": {
+                    "Source": "SCENE",
+                    "Catalog": "",
+                    "Category": "",
+                    "Uri": "Cone",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -100.0,
+                            "Forward": 100.0,
+                            "Up": 100.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.5,
+                        "Forward": 0.5,
+                        "Up": 0.5
+                    }
+                }
+            },
+            {
+                "Class": "Element",
+                "Identifier": "Cone2",
+                "Category": "Test",
+                "Description": "",
+                "Asset": {
+                    "Source": "PROJECT",
+                    "Catalog": "",
+                    "Category": "",
+                    "Uri": "ConeBP",
+                    "PartId": ""
+                },
+                "LocalTransform": {
+                    "ParentId": "",
+                    "UseCoordSys": true,
+                    "CoordSys": {
+                        "RightAxis": {
+                            "Right": 1.0,
+                            "Forward": 0.0,
+                            "Up": 0.0
+                        },
+                        "ForwardAxis": {
+                            "Right": 0.0,
+                            "Forward": 1.0,
+                            "Up": 0.0
+                        },
+                        "UpAxis": {
+                            "Right": 0.0,
+                            "Forward": 0.0,
+                            "Up": 1.0
+                        },
+                        "Origin": {
+                            "Right": -100.0,
+                            "Forward": 100.0,
+                            "Up": 150.0
+                        }
+                    },
+                    "Scale": {
+                        "Right": 0.25,
+                        "Forward": 0.25,
+                        "Up": 0.25
+                    }
+                }
+            }
+        ]
+    }
+}

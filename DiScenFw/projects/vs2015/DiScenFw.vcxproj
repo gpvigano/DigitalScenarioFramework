@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC1CAFA4-861C-4061-B6E0-40AB3B0D311D}</ProjectGuid>
+    <RootNamespace>DiScenFw</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\DSF_deps.props" />
+    <Import Project="..\..\..\DSF_deploy.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\DSF_deps.props" />
+    <Import Project="..\..\..\DSF_deploy.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\DSF_deps.props" />
+    <Import Project="..\..\..\DSF_deploy.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\DSF_deps.props" />
+    <Import Project="..\..\..\DSF_deploy.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\..\lib\vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</OutDir>
+    <IntDir>..\..\..\TEMP\$(MSBuildProjectName)\VC$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\..\lib\vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</OutDir>
+    <IntDir>..\..\..\TEMP\$(MSBuildProjectName)\VC$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(ProjectDir)..\..\lib\vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</OutDir>
+    <IntDir>..\..\..\TEMP\$(MSBuildProjectName)\VC$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(ProjectDir)..\..\lib\vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</OutDir>
+    <IntDir>..\..\..\TEMP\$(MSBuildProjectName)\VC$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)-$(PlatformShortName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include;$(RAPIDJSON_INC);$(BOOST_INC);$(GPVULC_INC)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DISCENFW_EXPORT;BOOST_ALL_NO_LIB;GPVULC_STATIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BOOST_LIB);$(GPVULC_LIB)vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gpvulc_text-$(PlatformShortName).lib;gpvulc_time-$(PlatformShortName).lib;gpvulc_path-$(PlatformShortName).lib;gpvulc_json-$(PlatformShortName).lib;gpvulc_console-$(PlatformShortName).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-sgd-x$(PlatformArchitecture)-$(BOOST_VER).lib;libboost_date_time-vc$(PlatformToolsetVersion)-mt-sgd-x$(PlatformArchitecture)-$(BOOST_VER).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+    <PreBuildEvent>
+      <Command>@echo Updating header files...
+xcopy /D /Y $(GPVULC_INC)gpvulc\time\DateTime.h $(ProjectDir)..\..\include\discenfw\util\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include;$(RAPIDJSON_INC);$(BOOST_INC);$(GPVULC_INC)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DISCENFW_EXPORT;BOOST_ALL_NO_LIB;GPVULC_STATIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(BOOST_LIB);$(GPVULC_LIB)vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gpvulc_text-$(PlatformShortName).lib;gpvulc_time-$(PlatformShortName).lib;gpvulc_path-$(PlatformShortName).lib;gpvulc_json-$(PlatformShortName).lib;gpvulc_console-$(PlatformShortName).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-sgd-x$(PlatformArchitecture)-$(BOOST_VER).lib;libboost_date_time-vc$(PlatformToolsetVersion)-mt-sgd-x$(PlatformArchitecture)-$(BOOST_VER).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+    <PreBuildEvent>
+      <Command>@echo Updating header files...
+xcopy /D /Y $(GPVULC_INC)gpvulc\time\DateTime.h $(ProjectDir)..\..\include\discenfw\util\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include;$(RAPIDJSON_INC);$(BOOST_INC);$(GPVULC_INC)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DISCENFW_EXPORT;BOOST_ALL_NO_LIB;GPVULC_STATIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(BOOST_LIB);$(GPVULC_LIB)vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gpvulc_text-$(PlatformShortName).lib;gpvulc_time-$(PlatformShortName).lib;gpvulc_path-$(PlatformShortName).lib;gpvulc_json-$(PlatformShortName).lib;gpvulc_console-$(PlatformShortName).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-s-x$(PlatformArchitecture)-$(BOOST_VER).lib;libboost_date_time-vc$(PlatformToolsetVersion)-mt-s-x$(PlatformArchitecture)-$(BOOST_VER).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>if not exist "$(UNITY_TEST_PLUGINS)" goto nounity
+echo Updating Unity project binaries...
+if not exist "$(UNITY_TEST_PLUGINS_X86)" mkdir "$(UNITY_TEST_PLUGINS_X86)"
+copy /Y $(TargetPath) "$(UNITY_TEST_PLUGINS_X86)"
+:nounity
+</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>@echo Updating header files...
+xcopy /D /Y $(GPVULC_INC)gpvulc\time\DateTime.h $(ProjectDir)..\..\include\discenfw\util\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\include;$(RAPIDJSON_INC);$(BOOST_INC);$(GPVULC_INC)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>DISCENFW_EXPORT;BOOST_ALL_NO_LIB;GPVULC_STATIC;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(BOOST_LIB);$(GPVULC_LIB)vc$(PlatformToolsetVersion)-$(PlatformShortName)-$(Configuration)\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>gpvulc_text-$(PlatformShortName).lib;gpvulc_time-$(PlatformShortName).lib;gpvulc_path-$(PlatformShortName).lib;gpvulc_json-$(PlatformShortName).lib;gpvulc_console-$(PlatformShortName).lib;libboost_filesystem-vc$(PlatformToolsetVersion)-mt-s-x$(PlatformArchitecture)-$(BOOST_VER).lib;libboost_date_time-vc$(PlatformToolsetVersion)-mt-s-x$(PlatformArchitecture)-$(BOOST_VER).lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent />
+    <PostBuildEvent>
+      <Command>if not exist "$(UNITY_TEST_PLUGINS)" goto nounity
+echo Updating Unity project binaries...
+if not exist "$(UNITY_TEST_PLUGINS_X64)" mkdir "$(UNITY_TEST_PLUGINS_X64)"
+copy /Y $(TargetPath) "$(UNITY_TEST_PLUGINS_X64)"
+:nounity
+if not exist "$(UE4TEST_ROOT)" goto noue4
+echo Updating UE4 project binaries...
+if not exist "$(UE4TEST_BIN)" mkdir "$(UE4TEST_BIN)"
+copy /Y $(OutDir)$(TargetName).dll "$(UE4TEST_BIN)"
+copy /Y $(OutDir)$(TargetName).pdb "$(UE4TEST_BIN)"
+:noue4</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>@echo Updating header files...
+xcopy /D /Y $(GPVULC_INC)gpvulc\time\DateTime.h $(ProjectDir)..\..\include\discenfw\util\</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\DigitalScenarioFramework.cpp" />
+    <ClCompile Include="..\..\src\DiScenFw.cpp" />
+    <ClCompile Include="..\..\src\interop\AgentLink.cpp" />
+    <ClCompile Include="..\..\src\interop\CyberSystemLink.cpp" />
+    <ClCompile Include="..\..\src\interop\DiScenApi.cpp" />
+    <ClCompile Include="..\..\src\interop\DiScenApiWrapper.cpp" />
+    <ClCompile Include="..\..\src\interop\DiScenXp.cpp" />
+    <ClCompile Include="..\..\src\interop\DiScenXpWrapper.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonCatalog.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonCatalogParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonCatalogWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonCommonParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonCommonWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonEnvironmentModel.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonEnvironmentModelParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonEnvironmentModelWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonExperience.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonExperienceParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonExperienceWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonHistoryParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonHistoryWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonParserBase.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonRLConfigParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonRLConfigWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonRoleInfo.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonRoleInfoParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonRoleInfoWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonScenarioParser.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonScenarioWriter.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonWriterBase.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonHistory.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonRLConfig.cpp" />
+    <ClCompile Include="..\..\src\JSON\JsonScenario.cpp" />
+    <ClCompile Include="..\..\src\RL\RLAgent.cpp" />
+    <ClCompile Include="..\..\src\scen\Aggregate.cpp" />
+    <ClCompile Include="..\..\src\scen\Catalog.cpp" />
+    <ClCompile Include="..\..\src\scen\ConnectionElement.cpp" />
+    <ClCompile Include="..\..\src\scen\Element.cpp" />
+    <ClCompile Include="..\..\src\scen\Entity.cpp" />
+    <ClCompile Include="..\..\src\scen\GroupElement.cpp" />
+    <ClCompile Include="..\..\src\scen\MutableElement.cpp" />
+    <ClCompile Include="..\..\src\scen\Scenario.cpp" />
+    <ClCompile Include="..\..\src\scen\ScenarioData.cpp" />
+    <ClCompile Include="..\..\src\scen\ScenarioManager.cpp" />
+    <ClCompile Include="..\..\src\scen\VirtualEnvironmentAPI.cpp" />
+    <ClCompile Include="..\..\src\sim\HistoryLogParser.cpp" />
+    <ClCompile Include="..\..\src\sim\SimulationController.cpp" />
+    <ClCompile Include="..\..\src\sim\SimulationExecutor.cpp" />
+    <ClCompile Include="..\..\src\sim\SimulationManager.cpp" />
+    <ClCompile Include="..\..\src\util\CompOp.cpp" />
+    <ClCompile Include="..\..\src\util\DateTimeUtil.cpp" />
+    <ClCompile Include="..\..\src\util\MessageLog.cpp" />
+    <ClCompile Include="..\..\src\util\Rand.cpp" />
+    <ClCompile Include="..\..\src\ve\VeManager.cpp" />
+    <ClCompile Include="..\..\src\xp\Condition.cpp" />
+    <ClCompile Include="..\..\src\xp\CyberSystemAgent.cpp" />
+    <ClCompile Include="..\..\src\xp\DigitalAssistant.cpp" />
+    <ClCompile Include="..\..\src\xp\CyberSystemAssistant.cpp" />
+    <ClCompile Include="..\..\src\xp\EntityCondition.cpp" />
+    <ClCompile Include="..\..\src\xp\EntityState.cpp" />
+    <ClCompile Include="..\..\src\xp\EntityStateType.cpp" />
+    <ClCompile Include="..\..\src\xp\EnvironmentModel.cpp" />
+    <ClCompile Include="..\..\src\xp\EnvironmentState.cpp" />
+    <ClCompile Include="..\..\src\xp\Experience.cpp" />
+    <ClCompile Include="..\..\src\xp\FeatureCondition.cpp" />
+    <ClCompile Include="..\..\src\xp\PropertyCondition.cpp" />
+    <ClCompile Include="..\..\src\xp\RoleInfo.cpp" />
+    <ClCompile Include="..\..\src\xp\SharedArena.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\DiScenAPI.h" />
+    <ClInclude Include="..\..\include\DiScenFw.h" />
+    <ClInclude Include="..\..\include\DiScenFwConfig.h" />
+    <ClInclude Include="..\..\include\DiScenFw\DigitalScenarioFramework.h" />
+    <ClInclude Include="..\..\include\discenfw\interop\AgentLink.h" />
+    <ClInclude Include="..\..\include\discenfw\interop\AgentPlugin.h" />
+    <ClInclude Include="..\..\include\discenfw\interop\CyberSystemLink.h" />
+    <ClInclude Include="..\..\include\discenfw\interop\CyberSystemPlugin.h" />
+    <ClInclude Include="..\..\include\discenfw\RL\IAgentConfiguration.h" />
+    <ClInclude Include="..\..\include\discenfw\RL\IAgent.h" />
+    <ClInclude Include="..\..\include\discenfw\RL\RLAgent.h" />
+    <ClInclude Include="..\..\include\discenfw\RL\RLConfig.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Aggregate.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Anchor.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\AssetDefinition.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\AssetReference.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Catalog.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\CatalogItem.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\CommonData.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\ConnectionElement.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\DiScenApiWrapper.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Element.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Entity.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\EntityBadge.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\EntityIdentity.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\GroupElement.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Inventory.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\InventoryItem.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\MutableElement.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\Scenario.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\ScenarioData.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\ScenarioManager.h" />
+    <ClInclude Include="..\..\include\discenfw\scen\SocketInfo.h" />
+    <ClInclude Include="..\..\include\discenfw\sim\HistoryLogParser.h" />
+    <ClInclude Include="..\..\include\discenfw\sim\ScenarioHistoryData.h" />
+    <ClInclude Include="..\..\include\discenfw\sim\SimulationController.h" />
+    <ClInclude Include="..\..\include\discenfw\sim\SimulationExecutor.h" />
+    <ClInclude Include="..\..\include\discenfw\sim\SimulationManager.h" />
+    <ClInclude Include="..\..\include\discenfw\util\CompOp.h" />
+    <ClInclude Include="..\..\include\discenfw\util\DateTimeUtil.h" />
+    <ClInclude Include="..\..\include\discenfw\util\IBaseClass.h" />
+    <ClInclude Include="..\..\include\discenfw\util\LogicOp.h" />
+    <ClInclude Include="..\..\include\discenfw\util\Rand.h" />
+    <ClInclude Include="..\..\include\discenfw\ve\VeManager.h" />
+    <ClInclude Include="..\..\include\discenfw\ve\VirtualEnvironmentAPI.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\Action.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\CyberSystemAgent.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\FeatureCondition.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\PropertyReward.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\ref.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\Transition.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\ActionResult.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\AgentStats.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\Condition.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\DigitalAssistant.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\CyberSystemAssistant.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\DiScenXpWrapper.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\EntityCondition.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\EntityState.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\EntityStateType.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\EnvironmentModel.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\EnvironmentState.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\EnvironmentStateInfo.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\Episode.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\Experience.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\ExperienceLevel.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\ICyberSystem.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\PropertyCondition.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\RelationshipCondition.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\RelationshipLink.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\RoleInfo.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\StateRewardRules.h" />
+    <ClInclude Include="..\..\include\discenfw\xp\SharedArena.h" />
+    <ClInclude Include="..\..\include\DiScenXp.h" />
+    <ClInclude Include="..\..\src\JSON\JsonCatalog.h" />
+    <ClInclude Include="..\..\src\JSON\JsonCatalogParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonCatalogWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonCommonParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonCommonWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonEnvironmentModel.h" />
+    <ClInclude Include="..\..\src\JSON\JsonEnvironmentModelParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonEnvironmentModelWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonExperience.h" />
+    <ClInclude Include="..\..\src\JSON\JsonExperienceParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonExperienceWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonHistory.h" />
+    <ClInclude Include="..\..\src\JSON\JsonHistoryParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonHistoryWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonParserBase.h" />
+    <ClInclude Include="..\..\src\JSON\JsonRLConfig.h" />
+    <ClInclude Include="..\..\src\JSON\JsonRLConfigParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonRLConfigWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonRoleInfo.h" />
+    <ClInclude Include="..\..\src\JSON\JsonRoleInfoParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonRoleInfoWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonScenario.h" />
+    <ClInclude Include="..\..\src\JSON\JsonScenarioParser.h" />
+    <ClInclude Include="..\..\src\JSON\JsonScenarioWriter.h" />
+    <ClInclude Include="..\..\src\JSON\JsonWriterBase.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
