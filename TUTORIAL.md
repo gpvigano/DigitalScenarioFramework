@@ -9,8 +9,8 @@ This repository includes projects for some compilers, see *[How to build Digital
 
 To run the examples in the IDE:
 
-* [Visual Studio]: open the solution in the root folder of this repository, *Set as StartUp Project* the *DiScenFwTest* project and *Start Without Debugging* or *Start Debugging*;
-* [Code::Blocks]: open the workspace in the root folder of this repository, *Activate* the *DiScenFwTest* project and *Run* or *Start/Continue*.
+* [Visual Studio] - open the solution in the root folder of this repository, *Set as StartUp Project* the *DiScenFwTest* project and *Start Without Debugging* or *Start Debugging*;
+* [Code::Blocks] - open the workspace in the root folder of this repository, *Activate* the *DiScenFwTest* project and *Run* or *Start/Continue*.
 
 A console will open and a menu will be displayed. You can choose an example pressing the corresponding number followed by *enter*, then you have to choose the running mode in a a similar way.
 
@@ -21,7 +21,7 @@ The core of *Digital Scenario Framework* API is implemented in the *DiScenFw* pr
 In the *TestGridworld* example of *DiScenFwTest* project you can see how to access the *DigitalScenarioFramework* methods. The *TestGridworld* example depends on two other projects: the *Gridworld* project, that demonstrates how to build cyber system plugin, and the *SampleAgent* project, a custom RL agent implementation with a custom configuration.
 
 The other examples are based on a lower level access to the framework API. In particular *TicTacToe* example is a test for multi-agent scenario, a classical example of a zero-sum game with perfect information.
-*LedCiruit* example shows how a task can be learned and it is replicated in [other projects](./README.md/#related-projects).
+*LedCircuit* example shows how a task can be learned and it is replicated in [other projects](./README.md/#related-projects).
 
 ### Building blocks
 

@@ -1,6 +1,6 @@
 ### Dependencies
 
-This framework uses [boost] (version 1.70.0, filesystem, date_time and dll libraries) and [rapidjson] (version 1.1.0) libraries.
+This framework uses [boost] (version 1.70.0, *filesystem*, *date_time* and *dll* libraries) and [rapidjson] (version 1.1.0) libraries.
 This project uses some libraries (`gpvulc_text`, `gpvulc_path`, `gpvulc_time`, `gpvulc_json`, `gpvulc_console`) developed in another project, [gpvulc].
 
 A subset of the external libraries needed to build this project can be found in the root folder of this repository, packed in a zip archive (`deps.zip`), you can unpack this archive in the root repository folder. To build each library included you will find [Visual Studio] and [Code::Blocks] projects in a 'projects' subfolder. A [Visual Studio] solution and a [Code::Blocks] workspace are available in the `deps` folder to build all the dependencies.

@@ -112,9 +112,7 @@ In order to test the multi-agent support a console-based program was developed, 
 
 To test a custom agent implementation, the classic gridworld example is provided as a console application. The Gridworld test can be run in two ways: automatic (a RL agent acts autonomously) or manual (the user can move the agent along the grid).
 
- ![image](./images/console_examples.png) 
-
-*Console-based examples.*
+ ![Console-based examples.](images/console_examples.png)
 
 Another console-based program was developed to test computer-assisted tasks. A simple schema of the electronic circuit can be displayed and timings and statistics are computed and displayed to compare different settings.
 A simplified model of an electronic circuit was used to build this and other examples, also with a VE as user interface (see [Related Projects](#related-projects)).
@@ -138,22 +136,22 @@ Attention was paid to write a portable code (hopefully compliant with any compil
 
 ### Dependencies
 
-This framework uses [boost] (version 1.70.0, *filesystem*, *date_time* and *dll* libraries) and [rapidjson] (version 1.1.0) libraries  (see [this document](./DEPENDENCIES.md) for details).
+This framework uses [boost] (version 1.70.0, *filesystem*, *date_time* and *dll* libraries) and [rapidjson] (version 1.1.0) libraries  (see [this document](DEPENDENCIES.md) for details).
 
 ### Interoperability
 
 This framework can be linked as dynamic linking library (DLL) in two ways: using the framework from a C++ application (mainly via the *DigitalScenarioFramework* API) or from any other programming language (thanks to a proper wrapper). 
 The C++/STL language used by the framework cannot be used directly from other client applications written in other languages. For this reason a wrapper was developed with a C-style programming interface that can be used in any platform, assuming suitable binaries for the library are provided.
 
-## Documentation
+## <a id="documentation">Documentation</a>
 
 The reference documentation can be generated with [Doxygen].
 
-Instructions about building the framework and its dependencies can be found [here](./HOW_TO_BUILD.md).
+Instructions about building the framework and its dependencies can be found [here](HOW_TO_BUILD.md).
 
-A tutorial to learn how to work with the framework is available [here](./TUTORIAL.md).
+A tutorial to learn how to work with the framework is available [here](TUTORIAL.md).
 
-## Related projects
+## <a id="related-projects">Related projects</a>
 
 **Note:** When working with other testing environments ([UnrealScenarioTest]/[UnityDigitalScenarioTest]) it is possible in [Visual Studio] to automatically update binaries in the project folders: just set `UE4TEST_ROOT` and/or `UNITY_TEST_ROOT` in `DSF_deploy.props` to the paths of UE4 and Unity test projects.
 
@@ -170,9 +168,7 @@ The *Digital Scenario Framework* library can be directly linked by an Unreal Eng
 
 *[UnrealScenarioTest]* project can be targeted on Unreal Engine supported platforms, but is only tested on Windows platform at the moment (contributions for other platforms from the developers community are welcome).
 
- ![image](./images/ledcircuit_ue4_success.png)
-
-*A screenshot from the Digital Scenario Framework Test for Unreal Engine.*
+ ![A screenshot from the Digital Scenario Framework Test for Unreal Engine.](images/ledcircuit_ue4_success.png)
 
 ### Digital Scenario Framework for .NET
 
@@ -184,7 +180,7 @@ The **[UnityDigitalScenarioTest]** project is a [Unity] project based on the Dig
 A point-and-click interaction was implemented to connect electronic components and to activate switches. Cables are automatically created and added to the scene to show the connections among electronic components. Electronic components can be selected and dragged to change their positions. 
 A user interface was developed to load and save the scenario configuration, to control the experience management, to test the automatic training and to define goals and success conditions. Please note that **this project has less features than UnrealScenarioTest** (development is more complicated because of the translation layers needed: C# - C wrapper - C++).
 
-## References
+## <a id="references">References</a>
 
 A good introduction to AI:
 
@@ -214,7 +210,7 @@ The project is [licensed](/LICENSE.txt) under the [MIT license](https://opensour
 
 Any feedback from you is really welcome, but please notice that **this is still a work-in-progress**, thus it may be difficult to accept pull requests or to review bug notifications.
 
-Anyway, if you find bugs or you have any new idea for improvements and new features you can create an issue on GitHub (please follow the suggested template, filling the proper sections). To open issues or make pull requests please follow the instructions in [CONTRIBUTING.md](/CONTRIBUTING.md).
+Anyway, if you find bugs or you have any new idea for improvements and new features you can create an issue on GitHub (please follow the suggested template, filling the proper sections). To open issues or make pull requests please follow the instructions in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 The [author] is new to AI field, thus any feedback is welcome, mainly about a possible interest in this work by researchers, developers or for educational purposes.
 

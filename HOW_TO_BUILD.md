@@ -15,7 +15,7 @@ The toolchain installed along with Code::Blocks-mingw (64 bit) cannot build 32 b
 
 All libraries are linked **statically** when building the framework libraries.
 
-After external dependecies are build (see [this document](./DEPENDENCIES.md) for details), the folder `deps` will include a subset of the external libraries needed to build this project.
+After external dependencies are build (see [this document](./DEPENDENCIES.md) for details), the folder `deps` will include a subset of the external libraries needed to build this project.
 
 Please note that the external dependencies are not needed to use the compiled framework libraries, header files and libraries binaries are enough.
 
